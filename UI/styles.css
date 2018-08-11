@@ -1,11 +1,30 @@
-
+html{
+	background-color: #1171f5;
+}
 .main-bar{
 	position: fixed;
 	width: 100%;
 	height: 4rem;
-	margin: 0px;
+	margin-top: -10px;
+	margin-left: -8px;
 	background-color: #fafafb;;
 
+}
+.logo{
+	position: absolute;
+	width: 7rem;
+	height: 2rem;
+	margin-top: 0rem;
+	margin-left: 5rem;
+	/*background-color: blue;*/
+}
+
+._lgw{
+	display: block;
+	margin-top: 10px;
+	font-size: 36px;
+	font-weight:800;
+	color: #34a853;
 }
 
 ._signup-btn{
@@ -52,4 +71,22 @@ a{
 ._login-btn:hover{
 	background-color: #e1edf7;
 
+}
+
+.content{
+	position: absolute;
+	width: 40rem;
+	height: 20rem;
+	margin-top: 7rem;
+	margin-left: 5rem;
+	color: #fff;
+	background-color: inherit;
+}
+
+.content h1{
+	font-size: 40px;
+}
+
+.content p{
+	font-size: 25px;
 }

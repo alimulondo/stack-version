@@ -31,3 +31,25 @@
 a{
 	cursor: pointer;
 }
+
+._login-btn{
+	position: absolute;
+	width: 3rem;
+	height: 2rem;
+	color: #07C;
+	border-radius: 3px;
+	margin-top: calc(1rem);
+	margin-left: calc(100% - 10rem);
+
+}
+
+._login-btn p{
+	display: block;
+	margin-top: 6px;
+	margin-left: 2px;
+}
+
+._login-btn:hover{
+	background-color: #e1edf7;
+
+}

@@ -1,12 +1,17 @@
 html{
 	background-color: #1171f5;
 }
+
+.ctn-html{
+	background-color: #fff; 
+}
 .main-bar{
 	position: fixed;
 	width: 100%;
 	height: 4rem;
 	margin-top: -10px;
 	margin-left: -8px;
+	border-bottom: 1.5px solid #e4e6e8;
 	background-color: #fafafb;;
 
 }
@@ -16,7 +21,6 @@ html{
 	height: 2rem;
 	margin-top: 0rem;
 	margin-left: 5rem;
-	/*background-color: blue;*/
 }
 
 ._lgw{
@@ -100,6 +104,14 @@ a{
     margin-left: calc(100% - 40rem); 
 }
 
+._form_ctn-log{
+    height: 24rem;
+    background-color: inherit;
+    border-radius: 3px;
+    border:1px solid #e4e6e8;
+    margin-left: calc(50% - 19rem); 
+}
+
 ._ctn-div{
 	position: absolute;
 	width: calc(100% - 1rem);
@@ -144,6 +156,10 @@ a{
 	margin-left: 2rem;
 }
 
+._email-ctm-log-div{
+	margin-top: 3rem;
+}
+
 ._psw-div{
 	position: absolute;
 	width: calc(100% - 1rem);
@@ -151,6 +167,18 @@ a{
 	background-color: inherit;
 	margin-top: 12rem;
 	margin-left: 2rem;
+}
+
+._forgot{
+	position: absolute;
+	margin-top: 2rem;
+	color: black;
+	margin-left: calc(100% - 7.4rem)
+}
+
+._forgot a{
+	color: black;
+	text-decoration: none;
 }
 
 ._psw-div-scd{
@@ -172,6 +200,12 @@ a{
 	margin-left: 2rem;
 }
 
+._sub-div-ctm{
+	margin-top: 17rem;
+	background-color: inherit;
+
+}
+
 .ctn-sub-btn{
 	visibility: hidden;
 	height: 100%;
@@ -182,12 +216,17 @@ a{
 	position: absolute;
 	width: 5rem;
 	height: 2rem;
-	margin-left: 2rem;
 	margin-top: 2rem;
+	margin-left: 2rem;
 	cursor: pointer;
 	border-radius: 3px;
-	border: 2px solid #fff;
+	border: 1px solid #fff;
 	background-color: #1088ed;
+}
+
+._sub-btn-div-ctm{
+	margin-left: calc(100% - 8rem);
+
 }
 
 ._sub-btn-div:hover{
@@ -211,12 +250,24 @@ a{
 	background-color: inherit;
 }
 
+._tms-div-ctm{
+	background-color: #fff;
+	color: black;
+
+}
+
 ._tms-div p{
-	margin-top: 5px;px;
+	margin-top: 5px;
 	font-size: 13px;
 }
+
 
 ._tms-div p a{
 	color: #fff;
 	text-decoration: none;
 }
+._tms-div-ctm p a{
+	color: black;
+	font-weight: 800;
+     
+} 

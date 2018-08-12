@@ -1,5 +1,7 @@
 html{
 	background-color: #1171f5;
+
+
 }
 
 .ctn-html{
@@ -322,12 +324,13 @@ a{
 a{
 	
    cursor: pointer;
+   /*display: block;*/
 }
 
 ._qn-tn-div{
 	position: absolute;
 	width: 90%;
-	height: 20%;
+	height: calc(20% + 4rem);
 	margin-top: 9rem; 
 	background-color: inherit;
 	border-bottom: 1px solid #e4e6e8;
@@ -341,6 +344,7 @@ a{
 	margin-top: 1rem;
 	margin-left: 20%;
 	background-color: inherit;
+
 }
 
 ._qn-ctn span{
@@ -388,4 +392,69 @@ a{
 	margin-top: 8px;
 	margin-left: 15px;
 
+}
+
+._vote-div{
+	position: absolute;
+	margin-top: 4px;
+}
+
+._voteup{
+	position: absolute;
+	width: 6rem;
+	height: 3.5rem;
+	margin-top: -1rem;
+	background-color: inherit;
+	background-image: url("images/upvote.png");
+	background-position: center;
+}
+
+
+._votedown{
+	position: absolute;
+	width: 6rem;
+	height: 3.5rem;
+	margin-top: 6rem;
+	background-color: inherit;
+	transform: rotateX(-180deg);
+	background-position: center;
+	background-image: url("images/upvote.png");
+}
+
+._vote-val{
+	display: block;
+	position: absolute;
+	margin-top: 2.5rem;
+	margin-left: 10px;
+	font-size: 50px;
+}
+
+._ans-stc{
+	position: absolute;
+	width: 4rem;
+	height: 2rem;
+	margin-top: 11.5rem;
+	margin-left: 8rem;
+}
+
+._ans-stc span{
+	display: block;
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+}
+
+img{
+	display: inline;
+}
+
+._ans-ctn{
+	margin-top: 25rem;
+	height: calc(20% + 6rem);
+
+
+}
+
+._cmt{
+	width: 7rem;
 }

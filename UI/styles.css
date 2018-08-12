@@ -405,7 +405,9 @@ a{
 	height: 3.5rem;
 	margin-top: -1rem;
 	background-color: inherit;
-	background-image: url("images/upvote.png");
+	background-size: 4rem;
+	background-repeat: no-repeat;
+	background-image: url("images/upvote2.png");
 	background-position: center;
 }
 
@@ -416,9 +418,11 @@ a{
 	height: 3.5rem;
 	margin-top: 6rem;
 	background-color: inherit;
+	background-size: 4rem;
+	background-repeat: no-repeat;
 	transform: rotateX(-180deg);
 	background-position: center;
-	background-image: url("images/upvote.png");
+	background-image: url("images/upvote2.png");
 }
 
 ._vote-val{
@@ -457,4 +461,65 @@ img{
 
 ._cmt{
 	width: 7rem;
+}
+
+._accept{
+	position: absolute;
+	width: 5rem;
+	height: 5rem;
+	background-size: 3rem;
+	margin-top: 10rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("images/tick1.png");
+
+}
+
+._count-ans{
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	font-size: 24px;
+	margin-left: 8rem;
+	margin-top: 2.5rem;
+	background-color: inherit;
+}
+
+._bcl{
+	color: blue
+}
+
+._cmt-div{
+	position: absolute;
+	width: 30rem;
+	height: 5rem;
+	margin-top: 40rem;
+	margin-left: 16rem;
+	font-size: 14px;
+	background-color: inherit;
+	border-bottom:1px solid #e4e6e8;
+}
+
+._cmt-div-cutom{
+	margin-top: 45.5rem;
+	height: 7rem;
+
+}
+
+._loop-cmt{
+	position: absolute;
+	width: 7rem;
+	height: 2rem;
+	border-radius: 2px;
+	margin-top: calc(1rem);
+	margin-left: calc(2rem);
+	background-color: #e0eaf1;
+
+}
+
+._loop-cmt span{
+	display: block;
+	margin-top: 8px;
+	margin-left: 15px;
+
 }

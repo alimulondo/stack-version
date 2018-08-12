@@ -283,3 +283,109 @@ a{
 	font-weight: 800;
      
 } 
+
+._qh-div{
+	position: absolute;
+	width: calc(100% - 2rem);
+	height: 4rem;
+	margin-top: 4rem;
+	border-bottom: 1px solid #e4e6e8;
+}
+
+._qtn-tt{
+	position: absolute;
+	width: calc(75% + 2rem)
+}
+
+._qtn-tt h1{
+	font-weight: 400;
+	font-size: 20;
+
+}
+
+._qtn-btn{
+   position: absolute;
+   width: 7rem;
+   height: 2rem;
+   margin-top: 1rem;
+   margin-left: calc(75% + 4rem);
+   background-color: #1171f5;
+   border-radius: 3px;	
+}
+
+._qtn-btn p{
+  margin-top: 8px;
+  margin-left: 6px;
+  color: #fff;
+}
+
+a{
+	
+   cursor: pointer;
+}
+
+._qn-tn-div{
+	position: absolute;
+	width: 90%;
+	height: 20%;
+	margin-top: 9rem; 
+	background-color: inherit;
+	border-bottom: 1px solid #e4e6e8;
+	
+}
+
+._qn-ctn{
+	position: absolute;
+	width: 40%;
+	height: 60%;
+	margin-top: 1rem;
+	margin-left: 20%;
+	background-color: inherit;
+}
+
+._qn-ctn span{
+	font-size: 17px;
+}
+
+._qn-ctn a{
+	font-weight: 800;
+}
+._user-div{
+	position: absolute;
+	width: 10rem;
+	height: 5rem;
+	margin-top: 2rem;
+	border-radius: 3px;
+	background-color: #e0eaf1;
+	margin-left: calc(60% + 4rem);
+}
+
+._date{
+	display: block;
+	margin-left: 1rem;
+}
+
+._user{
+	display: block;
+	margin-left: 1rem;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+._delete{
+	position: absolute;
+	width: 5rem;
+	height: 2rem;
+	border-radius: 2px;
+	margin-top: calc(5rem + 20px);
+	margin-left: calc(30rem);
+	background-color: #e0eaf1;
+
+}
+
+._delete span{
+	display: block;
+	margin-top: 8px;
+	margin-left: 15px;
+
+}

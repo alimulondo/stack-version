@@ -523,3 +523,60 @@ img{
 	margin-left: 15px;
 
 }
+
+._txt-qn-div{
+	position: absolute;
+	width: 20rem;
+	height: 20rem;
+	background-color: inherit;
+	margin-top: 54rem;
+	border: 1px solid #e4e6e8;
+}
+
+._txt-cont-div{
+	position: absolute;
+	width: 20rem;
+	height: 10rem;
+	margin-top: 2rem;
+
+}
+
+._txt-cont-div  textarea{
+	width: 98%;
+	height: 100%;
+
+}
+
+._ln1{
+	width: 100%;
+	height: 0px;margin-top: 1rem;
+	border-bottom:1px solid #e4e6e8;
+
+}
+
+._ln2{
+	width: 100%;
+	height: 0px;
+	margin-top: 14rem;
+	border-bottom:1px solid #e4e6e8;
+
+}
+
+
+._ln3{
+	width: 100%;
+	height: 0px;
+	margin-top: 15px;
+	border-bottom: 1px solid #e4e6e8;
+
+}
+
+._txt-tt{
+	position: absolute;
+	margin-top: -1rem;
+}
+
+._last-div{
+	position: absolute;
+	margin-top: 75rem;
+}

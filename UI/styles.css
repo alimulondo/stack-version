@@ -204,7 +204,7 @@ a{
 	width: calc(100% - 3rem);
 	height: 6rem;
 	color: #fff;
-	background-color: #1088ed;
+	background-color: #fff;
 	margin-top: 21rem;
 	margin-left: 2rem;
 }
@@ -265,7 +265,7 @@ a{
 }
 
 ._tms-div-ctm{
-	background-color: #fff;
+	background-color: inherit;
 	color: #535a60;
 
 }
@@ -530,6 +530,7 @@ img{
 	height: 20rem;
 	background-color: inherit;
 	margin-top: 54rem;
+	margin-left: calc(20%  + 10rem);
 	border: 1px solid #e4e6e8;
 }
 
@@ -579,4 +580,8 @@ img{
 ._last-div{
 	position: absolute;
 	margin-top: 75rem;
+}
+
+._page-feed{
+	    background-color: #1088ed;
 }

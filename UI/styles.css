@@ -324,7 +324,7 @@ a{
 a{
 	
    cursor: pointer;
-   /*display: block;*/
+   text-decoration: none;
 }
 
 ._qn-tn-div{
@@ -642,6 +642,61 @@ img{
 }
 
 ._ask-btn:hover{
-	/*background-color: */
 	background-color: #1088ed;
+}
+
+._ctm-color{
+	color:#242729;
+}
+
+._dr-ln{
+	position: absolute;
+	height: 0px;
+	width: 70%;
+	margin-top: 12rem;
+	margin-left: 15%;
+	border-bottom: 2px solid #e4e6e8;
+   
+}
+
+._sp-qtn-div{
+	position: absolute;
+	margin-left: 15%;
+	margin-top: 13rem;
+	width: 70%;
+	height: 8rem;
+	border-bottom: 1px solid #e4e6e8;
+
+
+}
+
+._qtn-hd{
+	color:  #07C;
+	
+}
+
+._qtn-hd, ._qtn-p{
+	margin-left: 6rem;
+}
+
+._qtn-status{
+	position: absolute;
+	margin-top: -7rem;
+}
+
+._qtn-status span{
+	display: block;
+	padding-bottom: 10px;
+}
+
+._qtn-ht1{
+	margin-top: 22rem;
+}
+
+._qtn-ht2{
+	margin-top: 31rem;
+}
+
+._qtn-ht3{
+	margin-top: 41rem;
 }

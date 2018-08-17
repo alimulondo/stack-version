@@ -310,7 +310,17 @@ a{
    width: 7rem;
    height: 2rem;
    margin-top: 1rem;
-   margin-left: calc(75% + 4rem);
+   margin-left: calc(75%);
+   background-color: #1171f5;
+   border-radius: 3px;	
+}
+
+._view-btn{
+   position: absolute;
+   width: 7rem;
+   height: 2rem;
+   margin-top: 1rem;
+   margin-left: calc(75% + 11rem);
    background-color: #1171f5;
    border-radius: 3px;	
 }
@@ -321,6 +331,11 @@ a{
   color: #fff;
 }
 
+._view-btn p{
+  margin-top: 8px;
+  margin-left: 6px;
+  color: #fff;
+}
 a{
 	
    cursor: pointer;

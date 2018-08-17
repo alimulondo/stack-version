@@ -204,7 +204,7 @@ a{
 	width: calc(100% - 3rem);
 	height: 6rem;
 	color: #fff;
-	background-color: #fff;
+	background-color: inherit;
 	margin-top: 21rem;
 	margin-left: 2rem;
 }

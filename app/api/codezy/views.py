@@ -68,4 +68,5 @@ class Answer(Resource, Data, GreatHelper):
                     if info != '':
                         msg["answer"] = info
                         return self.response("Great", "Thanks for answering on platform this")
-            return False    
+            return self.response("Failed", "Sorry, No such question")        
+               

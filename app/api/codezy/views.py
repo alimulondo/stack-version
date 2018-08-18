@@ -25,3 +25,10 @@ class PostQuestion(Resource, Data):
                 if result:
                     return self.obj.response("Successful", "Successfully posted")
             return self.obj.response("Failed", "Sorry, can't post this question")
+
+class PullQuestions(Resource, Data, GreatHelper):
+    """Here all questions can be viewed. """
+
+    def get(self):
+        content = self.cont
+        return self.response("Questions", content)

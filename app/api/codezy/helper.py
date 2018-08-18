@@ -6,6 +6,6 @@ class GreatHelper:
     """Supports views module"""
 
 
-    def response(self, message, state):
+    def response(self, state, message):
         cont = jsonify({"state": state, "message": message })
         return make_response(cont)

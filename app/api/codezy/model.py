@@ -2,7 +2,7 @@
 
 class Data:
     """Class for data aggregation."""
-    count = 0
+    count =[0,] 
     cont = []
     questions  = dict()
     ans = dict()
@@ -15,8 +15,8 @@ class Data:
     
     def id_generator(self):
         """Generate question id here."""
-        self.count = self.count + 100
-        return self.count
+        self.count[0] = self.count[0] + 100
+        return self.count[0]
     
 
     def store_answer(self):

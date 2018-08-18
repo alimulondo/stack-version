@@ -7,7 +7,6 @@ class BaseConfig(object):
     """
     TESTING = False
     DEBUG = False
-    SECRET_KEY = os.urandom(24)
 
 
 class TestingConfig(BaseConfig):

@@ -32,3 +32,19 @@ class PullQuestions(Resource, Data, GreatHelper):
     def get(self):
         content = self.cont
         return self.response("Questions", content)
+
+
+class PullSingleQuestions(Resource, Data, GreatHelper):
+    """Here user can view only one question"""
+
+    def get(self, questionId):
+        """Get single question here."""
+        try:
+            val = int(questionId)
+        except ValueError :
+            self.response("Failed", "only numbers are allowed")
+        else:
+            for msg in self.cont:
+                if msg["id"] == val:
+                    return self.response("question", msg)
+            return self.response("Failed", "Sorry, No such question")        

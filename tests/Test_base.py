@@ -32,8 +32,34 @@ class TestCases(unittest.TestCase):
 
 
     def test_post_question(self):
-        """check effect when other than json is sent."""
+        """check effect when json is sent."""
 
         result = self.client.post('/api/v1/questions', data = json.dumps(self.info), content_type = 'application/json')
         
         self.assertEqual(result.status_code, 200)
+
+
+    def test_view_all_questions(self):
+        """test viewing all questions."""
+
+        result = self.client.get('/api/v1/questions', content_type = 'application/json')
+        
+        self.assertEqual(result.status_code, 200)  
+
+
+    def test_view_single_questions_one(self):
+        """test viewing single question with fake id."""
+        questionId = "gdfr"
+
+        result = self.client.get('/api/v1/questions/{}'.format(questionId), content_type = 'application/json')
+        
+        self.assertEqual(result.status_code, 200)      
+
+    
+    def test_view_single_questions_two(self):
+        """test viewing single question with right id."""
+        questionId = 100
+
+        result = self.client.get('/api/v1/questions/{}'.format(questionId), content_type = 'application/json')
+        
+        self.assertEqual(result.status_code, 200)    

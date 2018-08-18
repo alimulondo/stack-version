@@ -8,8 +8,9 @@ from app.api.codezy import stack
 
 
 def creatapp():
-	myapp = Flask(__name__)
-	return myapp
+    myapp = Flask(__name__)
+    return myapp
+
 
 app = creatapp()
 app.config.from_object(app_config["development"])

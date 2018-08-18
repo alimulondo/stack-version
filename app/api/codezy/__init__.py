@@ -5,7 +5,7 @@ from flask import Blueprint
 from flask_restful import Api
 
 from app.api.codezy.views import PostQuestion, PullQuestions, \
-PullSingleQuestions, Answer
+    PullSingleQuestions, Answer
 
 
 stack = Blueprint("handle", __name__)

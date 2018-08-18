@@ -26,6 +26,7 @@ class PostQuestion(Resource, Data):
                     return self.obj.response("Successful", "Successfully posted")
             return self.obj.response("Failed", "Sorry, can't post this question")
 
+
 class PullQuestions(Resource, Data, GreatHelper):
     """Here all questions can be viewed. """
 
@@ -42,13 +43,13 @@ class PullSingleQuestions(Resource, Data, GreatHelper):
 
         try:
             val = int(questionId)
-        except ValueError :
+        except ValueError:
             self.response("Failed", "only numbers are allowed for questionIds")
         else:
             for msg in self.cont:
                 if msg["id"] == val:
                     return self.response("question", msg)
-            return self.response("Failed", "Sorry, No such question")        
+            return self.response("Failed", "Sorry, No such question")
 
 
 class Answer(Resource, Data, GreatHelper):
@@ -56,7 +57,7 @@ class Answer(Resource, Data, GreatHelper):
 
     def post(self, questionId):
         """Answer a single question at a time."""
-        
+
         try:
             val = int(questionId)
         except ValueError:
@@ -68,5 +69,4 @@ class Answer(Resource, Data, GreatHelper):
                     if info != '':
                         msg["answer"] = info
                         return self.response("Great", "Thanks for answering on platform this")
-            return self.response("Failed", "Sorry, No such question")        
-               
+            return self.response("Failed", "Sorry, No such question")

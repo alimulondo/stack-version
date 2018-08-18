@@ -6,8 +6,6 @@ import json
 
 from app import app
 
-from app.config  import app_config
-
 class TestCases(unittest.TestCase):
     """This is the main test class. """
 
@@ -17,10 +15,6 @@ class TestCases(unittest.TestCase):
         self.info = {"msg": " How do i connect to heroku. "}
 
         self.client = app.test_client(self)
-
-        # app.config.from_object(app_config["testing"])
-
-        # return app
 
 
     def test_question_content(self):
@@ -62,4 +56,36 @@ class TestCases(unittest.TestCase):
 
         result = self.client.get('/api/v1/questions/{}'.format(questionId), content_type = 'application/json')
         
-        self.assertEqual(result.status_code, 200)    
+        self.assertEqual(result.status_code, 200)   
+
+
+    def test_answer(self):
+        """test adding answer to a question."""
+        questionId = 100
+
+        result = self.client.post('/api/v1/questions/{}/answers'.format(questionId), data = json.dumps(self.info), \
+            content_type = 'application/json')
+        
+        self.assertEqual(result.status_code, 200)   
+
+
+    def test_answer_fakeid(self):
+        """test adding answer to a question, fake id."""
+
+        questionId = "uy100"
+
+        result = self.client.post('/api/v1/questions/{}/answers'.format(questionId), data = json.dumps(self.info), \
+            content_type = 'application/json')
+        
+        self.assertEqual(result.status_code, 200)  
+
+
+    def test_answer_fakedata(self):
+        """test adding answer to a question, fake id."""
+
+        questionId = 100
+
+        result = self.client.post('/api/v1/questions/{}/answers'.format(questionId), data = "", \
+            content_type = 'application/json')
+        
+        self.assertEqual(result.status_code, 200)         

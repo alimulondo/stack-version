@@ -39,12 +39,33 @@ class PullSingleQuestions(Resource, Data, GreatHelper):
 
     def get(self, questionId):
         """Get single question here."""
+
         try:
             val = int(questionId)
         except ValueError :
-            self.response("Failed", "only numbers are allowed")
+            self.response("Failed", "only numbers are allowed for questionIds")
         else:
             for msg in self.cont:
                 if msg["id"] == val:
                     return self.response("question", msg)
             return self.response("Failed", "Sorry, No such question")        
+
+
+class Answer(Resource, Data, GreatHelper):
+    """Here user can answer a question"""
+
+    def post(self, questionId):
+        """Answer a single question at a time."""
+        
+        try:
+            val = int(questionId)
+        except ValueError:
+            self.response("Failed", "only numbers are allowed for questionIds")
+        else:
+            for msg in self.cont:
+                if msg["id"] == val and request.content_type == 'application/json':
+                    info = request.get_json()
+                    if info != '':
+                        msg["answer"] = info
+                        return self.response("Great", "Thanks for answering on platform this")
+            return False    

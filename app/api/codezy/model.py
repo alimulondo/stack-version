@@ -32,8 +32,3 @@ class Data:
             return True  
         return False
        
-
-
-obh = Data()
-
-print(obh.store_question(""))

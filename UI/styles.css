@@ -723,3 +723,10 @@ img{
 	background-size: cover;
 
 }
+
+._validate{
+	position: absolute;
+	margin-top: 2rem;
+	margin-left: 10rem;
+	color: red;
+}

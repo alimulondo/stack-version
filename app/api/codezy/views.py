@@ -55,6 +55,7 @@ class PullSingleQuestions(Resource, Data, GreatHelper):
 class Answer(Resource, Data, GreatHelper):
     """Here user can answer a question"""
 
+
     def post(self, questionId):
         """Answer a single question at a time."""
 
@@ -67,6 +68,6 @@ class Answer(Resource, Data, GreatHelper):
                 if msg["id"] == val and request.content_type == 'application/json':
                     info = request.get_json()
                     if info != '':
-                        msg["answer"] = info
+                        msg["answer{}".format(self.id_generator_qustion())] = info
                         return self.response("Great", "Thanks for answering on platform this")
             return self.response("Failed", "Sorry, No such question")

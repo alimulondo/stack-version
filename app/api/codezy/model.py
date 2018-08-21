@@ -8,6 +8,8 @@ class Data:
     questions = dict()
     ans = dict()
 
+    increase = [0,]
+
     def store_data(self, question):
         """Store data here."""
         self.cont.append(question)
@@ -28,3 +30,10 @@ class Data:
             self.store_data(self.questions)
             return True
         return False
+
+
+    def id_generator_qustion(self):
+        """Generate question id here."""
+        self.increase[0] = self.increase[0] + 1
+        return self.increase[0]
+    

@@ -14,7 +14,7 @@ class Data:
 
     def id_generator(self):
         """Generate question id here."""
-        self.count[0] = self.count[0] + 100
+        self.count[0] = self.count[0] + 1
         return self.count[0]
 
     def store_answer(self):

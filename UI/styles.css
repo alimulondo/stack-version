@@ -1,11 +1,7 @@
-html{
-	background-color: #1171f5;
 
-
-}
 
 .ctn-html{
-	background-color: #fff; 
+	/*background-color: #fff; */
 }
 .main-bar{
 	position: fixed;
@@ -108,14 +104,14 @@ a{
 
 ._form_ctn-log{
     height: 24rem;
-    background-color: inherit;
+    background-color: #1171f5;
     border-radius: 3px;
     border:1px solid #e4e6e8;
     margin-left: calc(50% - 19rem); 
 }
 ._form_ctn-signup{
 	height: 28rem;
-    background-color: inherit;
+    background-color: #1171f5;
     border-radius: 3px;
     border:1px solid #e4e6e8;
     margin-left: calc(50% - 19rem);
@@ -598,7 +594,7 @@ img{
 }
 
 ._page-feed{
-	    background-color: #1088ed;
+	    /*background-color: #1088ed;*/
 }
 
 ._ask-tt{
@@ -714,4 +710,23 @@ img{
 
 ._qtn-ht3{
 	margin-top: 41rem;
+}
+
+._piv-back{
+	background-image: url(images/pic1.jpg);
+	background-size: cover;
+
+}
+
+._piv-back-ask{
+	background-image: url(images/pic2.jpg);
+	background-size: cover;
+
+}
+
+._validate{
+	position: absolute;
+	margin-top: 2rem;
+	margin-left: 10rem;
+	color: red;
 }

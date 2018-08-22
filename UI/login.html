@@ -1,11 +1,13 @@
 <!DOCTYPE html >
-<html class="ctn-html _page-feed">
+<html >
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 	<title></title>
 </head>
-<body >
+<body class="_piv-back">
+   <script type="text/javascript" src="code.js"></script>
+   
 
 <div class="main-bar">
          <div class="logo">
@@ -29,8 +31,12 @@
             <label class="_ctn-lb"> Email </label>
                </div>
             <div class="_inp-div">
-               <input type="text" name="display" placeholder="example@gmail.com" class="_ctm-inp">
+               <input type="text" name="display" placeholder="example@gmail.com" class="_ctm-inp" id="myemail" oninput="myFunction()">
             </div>
+            <div class="_validate">
+               <p id="contdis"></p>
+            </div>
+
          </div>
 
          <div class="_psw-div">

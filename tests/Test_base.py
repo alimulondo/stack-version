@@ -52,7 +52,7 @@ class TestCases(unittest.TestCase):
     
     def test_view_single_questions_two(self):
         """test viewing single question with right id."""
-        questionId = 100
+        questionId = 1
 
         result = self.client.get('/api/v1/questions/{}'.format(questionId), content_type = 'application/json')
         
@@ -61,7 +61,7 @@ class TestCases(unittest.TestCase):
 
     def test_answer(self):
         """test adding answer to a question."""
-        questionId = 100
+        questionId = 1
 
         result = self.client.post('/api/v1/questions/{}/answers'.format(questionId), data = json.dumps(self.info), \
             content_type = 'application/json')
@@ -83,9 +83,12 @@ class TestCases(unittest.TestCase):
     def test_answer_fakedata(self):
         """test adding answer to a question, fake id."""
 
-        questionId = 100
+        questionId = 1
 
         result = self.client.post('/api/v1/questions/{}/answers'.format(questionId), data = "", \
             content_type = 'application/json')
         
         self.assertEqual(result.status_code, 200)         
+
+
+    

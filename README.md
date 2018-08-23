@@ -5,3 +5,27 @@
 Each month, over 20k developers come to Codezy to learn, share and build their career.
 
 Join the most amazing community of developers free of charge.
+
+# Api File Structure.
+
+--- app
+    config.py
+    __init__.py   
+    api
+        config.py
+        __init__.py
+        codezy
+            __init__.py
+            views.py
+            model.py
+            helper.py
+    tests
+        test_base.py
+    .coverage
+    .coveralls.yml
+    Procfile
+    README.txt
+    requirements.txt
+    run.py    
+
+

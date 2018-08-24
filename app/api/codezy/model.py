@@ -1,34 +1,39 @@
 """Data module."""
 
+
 class Data:
     """Class for data aggregation."""
-    count =[0,] 
+    count = [0, ]
     cont = []
-    questions  = dict()
+    questions = dict()
     ans = dict()
 
+    increase = [0,]
 
     def store_data(self, question):
         """Store data here."""
         self.cont.append(question)
-    
-    
+
     def id_generator(self):
         """Generate question id here."""
-        self.count[0] = self.count[0] + 100
+        self.count[0] = self.count[0] + 1
         return self.count[0]
-    
 
     def store_answer(self):
         """Store answers here"""
         pass
-    
 
     def store_question(self, question):
         """Store question here"""
         if question != "":
             self.questions = {"id": self.id_generator(), "question": question}
             self.store_data(self.questions)
-            return True  
+            return True
         return False
-       
+
+
+    def id_generator_qustion(self):
+        """Generate question id here."""
+        self.increase[0] = self.increase[0] + 1
+        return self.increase[0]
+    
